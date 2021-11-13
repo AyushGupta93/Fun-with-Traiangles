@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #171717;
+    --secondary-color: #F97316;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: white;
+    margin: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    margin: 0rem auto;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    width: 53%;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+.container {
+    width: 50%;
+    margin: 1rem auto;
+    border: 3px solid var(--secondary-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.container h1 {
+    padding: 1rem;
+}
+
+.container h1,
+label {
+    align-self: center;
+}
+
+.container input {
+    padding: 0.5rem;
+}
+
+.container button {
+    margin: 2rem auto;
+    padding: 0.7rem;
+    font-family: inherit;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+button:hover{
+    color: var(--primary-color);
+}
+
+.container h2 {
+    border: 3px solid var(--secondary-color);
+    padding: 1.5rem;
+    align-self: center;
+    border-radius: 8px;
+}
+
+/* quiz */
+
+.container p,label{
+    padding: 1rem;
+}
+
+.container label{
+    align-self: center;
+}
+
+#submit{
+    margin: 1rem auto;
+    width: 100%;
+}
+
+.container h2{
+    text-align: center;
+}
+
+/* hypotenuse */
+.headingTxt{
+    text-align: center;
+    align-self: center;
+}
+#showOutput{
+   padding: 1.5rem;
+   width: -moz-available;
+}
+.container p{
+    align-self: center;
+}
+.watermark{
+    margin: 1rem auto;
+    width: max-content;
+}
+span a{
+    color: var(--secondary-color);
+}
+
+span a:hover{
+    color: var(--secondary-color)   ;
+}
+@media screen and (max-width:600px) {
+    .navbar{
+        width: fit-content;
+    }
+    .container{
+        width: inherit;
+    }
+    .watermark{
+        width: auto;
+    }
+    span {
+     display: block;
+     text-align: center;
+    }
+}
